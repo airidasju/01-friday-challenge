@@ -1,0 +1,136 @@
+nav {
+    width:100px;
+    height: 100%;
+    background: #F7F6FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s;
+
+}
+
+main {
+}
+a {
+    text-decoration: none;
+}
+a > span {
+    display: none;
+    color: var(--main-color);
+    animation: fadeIn 1s;
+}
+
+li > a > span {
+    color: var(--secondary-color);
+    animation: fadeIn 1s;
+}
+
+a {
+    display:flex;
+    gap:16px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+    
+}
+
+div:first-of-type {
+    padding-top: 52px;
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div:first-of-type::after {
+    position: absolute;
+    content:"";
+    background-color: var(--secondary-color);
+    width: 62px;
+    height: 3px;
+    bottom: 0px;
+    transition: all 1s
+}
+
+nav > div:nth-child(2)   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    height: 57px;
+    background: #fff;
+    margin-bottom: 34px;
+    margin-right: -10%;
+    }
+
+  ul > li:last-child > a > img{
+   width: 2.5em;
+  }
+
+
+  nav:hover {
+    width: 206px;
+  }
+
+ nav:hover span {
+    display: block;
+}
+
+nav:hover div:first-of-type::after {
+    position: absolute;
+    content:"";
+    background-color: var(--secondary-color);
+    width: 128px;
+    height: 3px;
+    bottom: 0px;
+}
+
+nav:hover ul {
+    align-items: flex-start;
+}
+
+footer {
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 35px;
+    font-size: 11px;
+    color: var(--main-color)
+}
+
+footer > p{
+ position: relative;
+ display: flex;
+ justify-content: center;
+ padding-top: 11px;
+}
+
+footer > p::before{
+    position: absolute;
+    content:"";
+    background-color: var(--main-color);
+    width: 346px;
+    height: 1px;
+    top: 0px;
+   }
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
