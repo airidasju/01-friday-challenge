@@ -9,7 +9,7 @@ _website design project_
 
 Site published at: [Home page](https://airidasju.github.io/01-friday-challenge/)
 
-Design: -----
+
 
 ## 🎯 Project features/goals
 
