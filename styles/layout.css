@@ -10,8 +10,7 @@ nav {
 
 }
 
-main {
-}
+
 a {
     text-decoration: none;
 }
@@ -46,8 +45,7 @@ ul {
 }
 
 div:first-of-type {
-    padding-top: 52px;
-    padding-bottom: 24px;
+    padding: 52px 0px 24px;
     margin-bottom: 32px;
     position: relative;
     display: flex;
@@ -73,8 +71,7 @@ nav > div:nth-child(2)   {
     border-bottom-left-radius: 50px;
     height: 57px;
     background: #fff;
-    margin-bottom: 34px;
-    margin-right: -10%;
+    margin: 0px -10% 34px 0px;
     }
 
   ul > li:last-child > a > img{
